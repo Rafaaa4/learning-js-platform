@@ -1,0 +1,170 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  max-width: 450px;
+  width: 100%;
+  padding: 20px;
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.logo-text {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #f0db4f 0%, #ff6b6b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 2px solid #e0e0e0;
+  margin-bottom: 15px;
+}
+
+.form-control:focus {
+  border-color: #f0db4f;
+  box-shadow: 0 0 0 0.2rem rgba(240, 219, 79, 0.25);
+}
+
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #f0db4f 0%, #ff6b6b 100%);
+  border: none;
+  border-radius: 10px;
+  color: #1a1a2e;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-login:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(240, 219, 79, 0.4);
+}
+
+.divider {
+  text-align: center;
+  margin: 25px 0;
+  position: relative;
+}
+
+.divider span {
+  background: white;
+  padding: 0 10px;
+  color: #999;
+  position: relative;
+  z-index: 1;
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #e0e0e0;
+}
+
+.social-btn {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: all 0.3s;
+}
+
+.social-btn:hover {
+  border-color: #f0db4f;
+  transform: translateY(-2px);
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+}
+
+.signup-link a {
+  color: #f0db4f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+.form-check-input:checked {
+  background-color: #f0db4f;
+  border-color: #f0db4f;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .login-card {
+    padding: 30px;
+  }
+  .logo-text {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    padding: 10px;
+  }
+  .login-card {
+    padding: 20px;
+  }
+  .logo-text {
+    font-size: 24px;
+  }
+  .subtitle {
+    font-size: 14px;
+  }
+  .form-control {
+    padding: 10px 15px;
+  }
+  .btn-login,
+  .social-btn {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 15px;
+  }
+  .logo-text {
+    font-size: 20px;
+  }
+}

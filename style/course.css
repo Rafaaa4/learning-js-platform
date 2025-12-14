@@ -1,0 +1,181 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  min-height: 100vh;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #f0db4f 0%, #ff6b6b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-weight: 500;
+}
+
+.course-container {
+  padding: 40px 0;
+}
+
+.course-header {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.course-icon-large {
+  font-size: 64px;
+}
+
+.course-title-large {
+  font-size: 36px;
+  font-weight: 700;
+  color: #f0db4f;
+  margin: 15px 0;
+}
+
+.lesson-list {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lesson-item {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+
+.lesson-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #f0db4f;
+  transform: translateX(5px);
+}
+
+.lesson-item.active {
+  background: rgba(74, 222, 128, 0.15);
+  border-color: #4ade80;
+}
+
+.lesson-content {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: none;
+}
+
+.lesson-content.active {
+  display: block;
+}
+
+.code-editor {
+  background: #1a1a2e;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  font-family: "Courier New", monospace;
+  color: #f0db4f;
+  min-height: 200px;
+  margin: 20px 0;
+  resize: vertical;
+  width: 100%;
+}
+
+.output-box {
+  white-space: pre-wrap;
+  font-family: 'Courier New', monospace;
+  background: #1a1a2e;
+  color: #00ff00;
+  padding: 15px;
+  border-radius: 5px;
+  min-height: 100px;
+  margin-top: 10px;
+}
+
+.btn-run {
+  background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+  color: #1a1a2e;
+  font-weight: 600;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .course-container {
+    padding: 20px 0;
+  }
+
+  .course-header {
+    padding: 20px;
+  }
+
+  .course-icon-large {
+    font-size: 48px;
+  }
+
+  .course-title-large {
+    font-size: 28px;
+  }
+
+  .lesson-list {
+    padding: 15px;
+  }
+
+  .lesson-content {
+    padding: 20px;
+  }
+
+  .code-editor, .output-box {
+    padding: 15px;
+  }
+}
+
+/* Fix for Bootstrap navbar collapse */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: rgba(26, 26, 46, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar-nav {
+    align-items: flex-start !important;
+  }
+}

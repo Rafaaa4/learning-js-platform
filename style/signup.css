@@ -1,0 +1,159 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.signup-container {
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+}
+
+.signup-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.logo-text {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #f0db4f 0%, #ff6b6b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 2px solid #e0e0e0;
+  margin-bottom: 15px;
+}
+
+.form-control:focus {
+  border-color: #f0db4f;
+  box-shadow: 0 0 0 0.2rem rgba(240, 219, 79, 0.25);
+}
+
+.btn-signup {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #f0db4f 0%, #ff6b6b 100%);
+  border: none;
+  border-radius: 10px;
+  color: #1a1a2e;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-signup:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(240, 219, 79, 0.4);
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+}
+
+.login-link a {
+  color: #f0db4f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+.form-check-input:checked {
+  background-color: #f0db4f;
+  border-color: #f0db4f;
+}
+
+.password-strength {
+  height: 5px;
+  border-radius: 5px;
+  background: #e0e0e0;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.password-strength-bar {
+  height: 100%;
+  transition: all 0.3s;
+  width: 0%;
+}
+
+.strength-weak {
+  background: #ff6b6b;
+  width: 33%;
+}
+.strength-medium {
+  background: #fbbf24;
+  width: 66%;
+}
+.strength-strong {
+  background: #4ade80;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .signup-card {
+    padding: 30px;
+  }
+  .logo-text {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .signup-container {
+    padding: 10px;
+  }
+  .signup-card {
+    padding: 20px;
+  }
+  .logo-text {
+    font-size: 24px;
+  }
+  .subtitle {
+    font-size: 14px;
+  }
+  .form-control {
+    padding: 10px 15px;
+  }
+  .btn-signup {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-card {
+    padding: 15px;
+  }
+  .logo-text {
+    font-size: 20px;
+  }
+}
